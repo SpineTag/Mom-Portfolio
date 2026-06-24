@@ -11,6 +11,13 @@ document.addEventListener('DOMContentLoaded', () => {
       const isOpen = navLinks.classList.toggle('show');
       navToggle.setAttribute('aria-expanded', String(isOpen));
     });
+
+    document.addEventListener('keydown', (event) => {
+      if (event.key === 'Escape') {
+        navLinks.classList.remove('show');
+        navToggle.setAttribute('aria-expanded', 'false');
+      }
+    });
   }
 
   document.querySelectorAll('a[href^="#"]').forEach((link) => {
