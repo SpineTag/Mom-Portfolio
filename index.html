@@ -4,14 +4,24 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <meta name="description" content="Profil créatif et rapport professionnel sur Odette Kantesi, entrepreneuse rwandaise active en agriculture et cohésion familiale." />
-    <title>Odette Kantesi — Rapport créatif</title>
+    <title>Odette Kantesi | Rapport créatif</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
   </head>
   <body>
     <header class="site-header">
-      <nav class="nav">
-        <a class="logo" href="#">Odette Kantesi</a>
-        <button class="nav-toggle" aria-label="Ouvrir le menu">☰</button>
+      <nav class="nav" aria-label="Navigation principale">
+        <a class="logo" href="#home" aria-label="Retour à l'accueil">
+          <span>OK</span>
+          Odette Kantesi
+        </a>
+        <button class="nav-toggle" type="button" aria-label="Ouvrir le menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
         <ul class="nav-links">
           <li><a href="#about">Résumé</a></li>
           <li><a href="#biography">Carrière</a></li>
@@ -25,34 +35,53 @@
 
     <main>
       <section class="hero animate" id="home">
-        <div class="hero-shapes">
-          <span class="shape shape-1"></span>
-          <span class="shape shape-2"></span>
-          <span class="shape shape-3"></span>
-        </div>
         <div class="hero-inner">
           <div class="hero-copy">
-            <p class="eyebrow">Profil public</p>
-            <h1>Odette <span class="highlight">Kantesi</span></h1>
-            <p class="tagline">Entrepreneuse rwandaise, fondatrice de Join Others Rwanda et PDG de SE&KA Co. Ltd, active dans l'agriculture familiale et la cohésion sociale.</p>
-            <a class="cta" href="#about">Voir le rapport</a>
-          </div>
-          <div class="hero-card">
-            <img class="profile" src="images/profile.svg" alt="Portrait d'Odette Kantesi" />
-            <div class="hero-details">
-              <span>Vision</span>
-              <p>Faire des familles le cœur de l'agriculture et de la paix sociale.</p>
+            <p class="eyebrow">Profil public vérifié</p>
+            <h1>Odette <span>Kantesi</span></h1>
+            <p class="tagline">Entrepreneuse rwandaise et dirigeante associative, engagée dans l'agriculture familiale, la filière pomme de terre et la cohésion sociale.</p>
+            <div class="hero-actions" aria-label="Actions principales">
+              <a class="cta" href="#about">Explorer le rapport</a>
+              <a class="secondary-link" href="#timeline">Voir les étapes</a>
             </div>
           </div>
+
+          <aside class="hero-panel" aria-label="Synthèse du profil">
+            <div class="portrait-wrap">
+              <img class="profile" src="images/profile.svg" alt="Portrait stylisé d'Odette Kantesi" />
+            </div>
+            <div class="panel-copy">
+              <span class="panel-kicker">Vision</span>
+              <p>Faire des familles le cœur de l'agriculture locale et de la paix sociale.</p>
+            </div>
+            <dl class="quick-facts">
+              <div>
+                <dt>Organisation</dt>
+                <dd>Join Others Rwanda</dd>
+              </div>
+              <div>
+                <dt>Entreprise</dt>
+                <dd>SE&KA Co. Ltd</dd>
+              </div>
+              <div>
+                <dt>Territoire</dt>
+                <dd>Rwanda</dd>
+              </div>
+            </dl>
+          </aside>
         </div>
       </section>
 
       <section class="container about animate" id="about">
-        <div class="section-header"><div><h2>Résumé exécutif</h2><p>Synthèse du profil, des enjeux et de la présence publique repérée.</p></div></div>
+        <div class="section-header">
+          <p class="section-kicker">Résumé exécutif</p>
+          <h2>Un profil d'impact entre leadership familial et entrepreneuriat agricole.</h2>
+          <p>Synthèse du profil, des enjeux et de la présence publique repérée.</p>
+        </div>
         <div class="summary-grid">
-          <article class="summary-card">
+          <article class="summary-card featured">
             <strong>Identité</strong>
-            <p>Entrepreneuse et dirigeante associative rwandaise.</p>
+            <p>Entrepreneuse et dirigeante associative rwandaise, connue pour son travail communautaire et agricole.</p>
           </article>
           <article class="summary-card">
             <strong>Nationalité</strong>
@@ -64,17 +93,21 @@
           </article>
           <article class="summary-card">
             <strong>Activités</strong>
-            <p>Agriculture familiale, filière pomme de terre, cohésion familiale.</p>
+            <p>Agriculture familiale, semences de pomme de terre et cohésion familiale.</p>
           </article>
           <article class="summary-card">
             <strong>Sources</strong>
-            <p>SITE JOR, presse rwandaise et rapport Peace Direct.</p>
+            <p>Site JOR, presse rwandaise et rapport Peace Direct.</p>
           </article>
         </div>
       </section>
 
       <section class="container expertise animate" id="biography">
-        <div class="section-header"><div><h2>Biographie et carrière</h2><p>Parcours, réalisations associatives et engagements agricoles.</p></div></div>
+        <div class="section-header">
+          <p class="section-kicker">Biographie et carrière</p>
+          <h2>Une trajectoire construite autour de la communauté.</h2>
+          <p>Parcours, réalisations associatives et engagements agricoles.</p>
+        </div>
         <div class="content-grid">
           <div class="text-block">
             <p>Odette Kantesi a quitté l'administration en 2016 pour lancer un projet familial de paix sociale. Son ONG Join Others Rwanda a vu le jour officiellement le 7 mars 2020, juste avant le confinement.</p>
@@ -82,14 +115,17 @@
           </div>
           <div class="info-cards">
             <article class="card">
+              <span>01</span>
               <h3>Join Others Rwanda</h3>
               <p>ONG dédiée à la cohésion familiale et au soutien communautaire.</p>
             </article>
             <article class="card">
+              <span>02</span>
               <h3>SE&KA Co. Ltd</h3>
               <p>Société de semences de pomme de terre avec un fort ancrage rural.</p>
             </article>
             <article class="card">
+              <span>03</span>
               <h3>Expertise</h3>
               <p>Conflits familiaux, agriculture durable et leadership local.</p>
             </article>
@@ -98,21 +134,29 @@
       </section>
 
       <section class="container publications animate" id="media">
-        <div class="section-header"><div><h2>Publications et médias</h2><p>Repères connus dans la presse, les rapports et les prises de parole publiques.</p></div></div>
+        <div class="section-header">
+          <p class="section-kicker">Publications et médias</p>
+          <h2>Une présence publique concentrée sur les initiatives de terrain.</h2>
+          <p>Repères connus dans la presse, les rapports et les prises de parole publiques.</p>
+        </div>
         <div class="media-layout">
           <div class="media-copy">
             <p>Aucune publication académique ou livre directement attribuée à son nom n'a été trouvée. Son nom apparaît comme contributrice dans le rapport « Time to Decolonise Aid » (Peace Direct, 2023).</p>
           </div>
           <ul class="media-list">
             <li>2020 : article TheBridge sur ses activités agricoles et la production de semences.</li>
-            <li>Juin 2023 : participation à un débat radiophonique sur la pomme de terre, cité par Umuryango.</li>
+            <li>Juin 2023 : participation à un débat radiophonique sur la pomme de terre, citée par Umuryango.</li>
             <li>Présence en ligne via des vidéos et contenus sur la cohésion familiale.</li>
           </ul>
         </div>
       </section>
 
       <section class="container timeline animate" id="timeline">
-        <div class="section-header"><div><h2>Chronologie des faits marquants</h2><p>Étapes clés de son entrepreneurship et de l'émergence de ses projets.</p></div></div>
+        <div class="section-header">
+          <p class="section-kicker">Chronologie</p>
+          <h2>Les étapes qui structurent son engagement.</h2>
+          <p>Faits marquants de son entrepreneuriat et de l'émergence de ses projets.</p>
+        </div>
         <div class="timeline-list">
           <div class="timeline-item">
             <span class="timeline-date">2016</span>
@@ -123,11 +167,11 @@
             <p>Lancement officiel de Join Others Rwanda.</p>
           </div>
           <div class="timeline-item">
-            <span class="timeline-date">février 2020</span>
+            <span class="timeline-date">Février 2020</span>
             <p>Article TheBridge sur l'entrepreneuriat agricole.</p>
           </div>
           <div class="timeline-item">
-            <span class="timeline-date">juin 2023</span>
+            <span class="timeline-date">Juin 2023</span>
             <p>Intervention dans un débat radiophonique sur la pomme de terre.</p>
           </div>
           <div class="timeline-item">
@@ -138,17 +182,27 @@
       </section>
 
       <section class="container contact animate" id="contact">
-        <div class="section-header"><div><h2>Contact et présence en ligne</h2><p>Informations institutionnelles et recommandations pour approcher son initiative.</p></div></div>
-        <p>Visible principalement via son ONG Join Others Rwanda et sa société SE&KA. Aucun compte personnel officiel n'a été confirmé publiquement.</p>
-        <ul class="contact-list">
-          <li>Organisation : Join Others Rwanda</li>
-          <li>Entreprise : SE&KA Co. Ltd</li>
-          <li>Suggestion : contacter JOR pour des informations officielles.</li>
-        </ul>
+        <div class="section-header">
+          <p class="section-kicker">Contact</p>
+          <h2>Une présence institutionnelle plutôt que personnelle.</h2>
+          <p>Informations institutionnelles et recommandations pour approcher son initiative.</p>
+        </div>
+        <div class="contact-panel">
+          <p>Visible principalement via son ONG Join Others Rwanda et sa société SE&KA. Aucun compte personnel officiel n'a été confirmé publiquement.</p>
+          <ul class="contact-list">
+            <li><span>Organisation</span> Join Others Rwanda</li>
+            <li><span>Entreprise</span> SE&KA Co. Ltd</li>
+            <li><span>Approche</span> Contacter JOR pour des informations officielles.</li>
+          </ul>
+        </div>
       </section>
 
       <section class="container sources animate" id="sources">
-        <div class="section-header"><div><h2>Sources clés</h2><p>Principales références utilisées pour vérifier ce portrait et ses activités.</p></div></div>
+        <div class="section-header">
+          <p class="section-kicker">Sources clés</p>
+          <h2>Les références utilisées pour vérifier ce portrait.</h2>
+          <p>Principales sources consultées pour cadrer les activités publiques connues.</p>
+        </div>
         <ul class="source-list">
           <li>Site officiel de Join Others Rwanda (2024)</li>
           <li>Article TheBridge, février 2020</li>

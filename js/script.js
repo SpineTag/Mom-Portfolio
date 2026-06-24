@@ -8,7 +8,8 @@ document.addEventListener('DOMContentLoaded', () => {
   const navLinks = document.querySelector('.nav-links');
   if (navToggle && navLinks) {
     navToggle.addEventListener('click', () => {
-      navLinks.classList.toggle('show');
+      const isOpen = navLinks.classList.toggle('show');
+      navToggle.setAttribute('aria-expanded', String(isOpen));
     });
   }
 
@@ -18,6 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
       if (href.length > 1) {
         event.preventDefault();
         navLinks?.classList.remove('show');
+        navToggle?.setAttribute('aria-expanded', 'false');
         document.querySelector(href)?.scrollIntoView({ behavior: 'smooth' });
       }
     });
